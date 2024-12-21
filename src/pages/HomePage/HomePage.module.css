@@ -1,0 +1,36 @@
+.container {
+  background-image: url("/src/img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: 50% 50%; */
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 64px;
+  padding-top: 260px;
+  padding-bottom: 276px;
+  /* height: 100vh; */
+}
+
+.textContainer {
+  min-width: 571px;
+  color: #f7f7f7;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67%;
+  margin-bottom: 16px;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .container {
+    background-image: url("/src/img/bg@2x.jpg");
+  }
+}

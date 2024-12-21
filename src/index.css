@@ -1,6 +1,8 @@
 body {
-  font-family: sans-serif;
+  color: #101828;
   line-height: 1.5;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
 }
 
 h1,
@@ -15,6 +17,7 @@ p {
 
 ul,
 ol {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -22,4 +25,19 @@ ol {
 img {
   display: block;
   max-width: 100%;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  font: inherit;
+  text-align: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }

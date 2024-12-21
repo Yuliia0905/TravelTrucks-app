@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import {
   persistStore,
-  // persistReducer,
+  persistReducer,
   FLUSH,
   REHYDRATE,
   PAUSE,
@@ -9,31 +9,27 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
-// import storage from "redux-persist/lib/storage";
+import { campersReducer } from "./campers/slice.js";
+import storage from "redux-persist/lib/storage";
+import { filtersReducer } from "./filters/slice.js";
 
-// const settingsConfig = {
-//   key: "campers",
-//   storage,
-//   whitelist: ["campers"],
-// };
-
-// const persistConfig = {
-//   key: "filters",
-//   storage,
-//   whitelist: ["filters"],
-// };
+const persistConfig = {
+  key: "campers",
+  storage,
+  whitelist: ["campers"],
+};
 
 export const store = configureStore({
   reducer: {
-    // campers: persistReducer(persistConfig, campersReducer),
-    // filters: persistReducer(settingsConfig, filtersReducer),
-    // auth: persistReducer(authConfig, authReducer),
+    campers: persistReducer(persistConfig, campersReducer),
+    filters: filtersReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
+      immutableCheck: false, // Вимкнення ImmutableStateInvariantMiddleware
     }),
 });
 

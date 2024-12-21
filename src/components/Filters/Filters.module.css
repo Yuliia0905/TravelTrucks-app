@@ -1,0 +1,72 @@
+.filterTitle {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #475467;
+}
+
+.filterName {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dadde1;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 12px;
+  margin-bottom: 32px;
+}
+
+.filterLabel {
+  position: relative;
+  cursor: pointer;
+}
+.filterLabel span {
+  border: 1px solid #dadde1;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  width: 112px;
+  height: 96px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.hiddenCheckbox {
+  display: none;
+}
+
+.hiddenCheckbox:checked + span {
+  background-color: #f9fafb;
+  border-color: #3470ff;
+}
+
+.filterBtn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  border-radius: 200px;
+  padding: 16px 49px;
+  /* max-width: 173px; */
+  background-color: #e44848;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d84343;
+}

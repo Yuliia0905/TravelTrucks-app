@@ -1,0 +1,58 @@
+.container {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column; /* Вирівнювання елементів в колонку */
+  align-items: flex-start;
+  min-width: 360px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6c717b;
+  margin-bottom: 8px; /* Відстань між лейблом і інпутом */
+}
+
+.input-container {
+  position: relative;
+  width: 100%; /* Займає всю ширину контейнера */
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 48px;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.locIcon {
+  position: absolute;
+  left: 80px;
+  top: 95px;
+  fill: #6c717b;
+  stroke: #6c717b;
+  width: 20px;
+  height: 20px;
+  transition: all 250ms linear;
+}
+
+.input::placeholder {
+  color: #6c717b;
+}
+
+.input:focus {
+  outline: none;
+  color: #101828;
+}
+
+.input:focus + .locIcon {
+  fill: #101828;
+  stroke: #101828;
+}

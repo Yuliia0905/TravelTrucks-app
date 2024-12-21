@@ -1,0 +1,57 @@
+.container {
+  min-width: 888px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* .item {
+  padding: 24px;
+  border: 1px solid #dadde1;
+  border-radius: 20px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+}
+
+.price {
+  margin-left: auto;
+}
+
+
+
+.icon {
+  margin-left: 12px;
+  margin-top: 2px;
+  align-items: center;
+}
+
+.aboutContainer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  flex-basis: 100%;
+  display: flex;
+}
+
+
+.rating {
+  margin-right: 16px;
+} */
